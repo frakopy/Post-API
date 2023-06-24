@@ -7,6 +7,7 @@ from categories.api.router import router_categories
 from posts.api.router import router_posts
 from comments.api.routers import router_comment
 from django.conf import settings
+from home.views import home_view
 
 schema_view = get_schema_view(
     openapi.Info(
@@ -23,6 +24,9 @@ schema_view = get_schema_view(
 
 
 urlpatterns = [
+    # Path for home page
+    path('', home_view, name='home'),
+    # Path for admin
     path('admin/', admin.site.urls),
     #Paths for swagger
     path('docs/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
