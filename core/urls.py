@@ -6,6 +6,7 @@ from drf_yasg import openapi
 from categories.api.router import router_categories
 from posts.api.router import router_posts
 from comments.api.routers import router_comment
+from django.conf import settings
 
 schema_view = get_schema_view(
     openapi.Info(
@@ -32,3 +33,7 @@ urlpatterns = [
     path('api/', include(router_posts.urls)),
     path('api/', include(router_comment.urls)),
 ]
+
+if settings.DEBUG:
+    from django.conf.urls.static import static
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
