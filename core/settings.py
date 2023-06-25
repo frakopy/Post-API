@@ -61,7 +61,7 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'core.urls'
 
 CORS_ALLOWED_ORIGINS = [
-    "https://post-api-production-9c43.up.railway.app/",
+    "https://post-api-production-9c43.up.railway.app",
 ]
 
 TEMPLATES = [
