@@ -36,10 +36,10 @@ To get started with the Blog API, follow these steps:
 
 Access the API at http://localhost:8000 or the specified URL in your browser or via API testing tools like Postman.
 
-Documentation
+# *Documentation*
 Comprehensive API documentation is available to guide you through the various endpoints, request/response formats, and authentication mechanisms. 
 You can access the documentation by visiting https://post-api-production-9c43.up.railway.app/docs/ or https://post-api-production-9c43.up.railway.app/redocs/
 after starting the development server.
 
-Contributing
+# *Contributing*
 Contributions are welcome! If you have any suggestions, bug reports, or feature requests, please feel free to open an issue or
