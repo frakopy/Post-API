@@ -2,7 +2,7 @@
 
 This repository contains a powerful and efficient Blog API built using Django Rest Framework. With this API, users can easily create, retrieve, update, and delete blog-related information, including Categories, Posts, and Comments. Whether you're building a personal blog, a content management system, or any application that requires a robust blogging functionality, this API has got you covered.
 
-# Features
+## Features
 
 * User-Friendly: The API provides a user-friendly interface for seamless interaction and easy integration into your existing projects.
 * Categories: Users can create and manage different categories to organize their blog posts efficiently.
@@ -15,7 +15,7 @@ This repository contains a powerful and efficient Blog API built using Django Re
 * Validation: Input validation ensures that the data is accurate and follows the specified format.
 * Error Handling: Proper error handling and informative responses make debugging and troubleshooting easier.
 
-# Installation
+## Installation
 
 To get started with the Blog API, follow these steps:
 
@@ -36,10 +36,10 @@ To get started with the Blog API, follow these steps:
 
 Access the API at http://localhost:8000 or the specified URL in your browser or via API testing tools like Postman.
 
-# Documentation
+## Documentation
 Comprehensive API documentation is available to guide you through the various endpoints, request/response formats, and authentication mechanisms. 
 You can access the documentation by visiting https://post-api-production-9c43.up.railway.app/docs/ or https://post-api-production-9c43.up.railway.app/redocs/
 after starting the development server.
 
-# Contributing
+## Contributing
 Contributions are welcome! If you have any suggestions, bug reports, or feature requests, please feel free to open an issue or
