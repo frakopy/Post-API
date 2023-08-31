@@ -28,14 +28,16 @@ urlpatterns = [
     path('', home_view, name='home'),
     # Path for admin
     path('admin/', admin.site.urls),
-    #Paths for swagger
+    # Paths for swagger
     path('docs/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     path('redocs/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
-    #Pahts for API
+    # Pahts for API
     path('api/', include('users.api.router')),
     path('api/', include(router_categories.urls)),
     path('api/', include(router_posts.urls)),
     path('api/', include(router_comment.urls)),
+    # paths de Auth
+    path('accounts/', include('django.contrib.auth.urls')),
 ]
 
 if settings.DEBUG:
